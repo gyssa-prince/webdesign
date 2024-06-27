@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+   .images {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 100px;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.images img {
+    width: 100%;
+    height: 60vh;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+    footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding-bottom: 10px !important;
+}
+</style>
+<body>
+    <header>
+        <a href="#" class="logo">GYS<span class="blue">S</span><span class="green">A</span></a>
+        <img src="img/toggle.png" height="20px" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="../#home" >Home</a></li>
+            <li><a href="../#about">About me</a></li>
+            <li><a href="/blogs.html">Blog</a></li>
+            <li><a href="/#">Gallery</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+        </ul>
+    </header>
+    <div class="images">
+        <img src="/img/image1.webp" alt="">
+        <img src="/img/image2.jpeg" alt="">
+        <img src="/img/image3.webp" alt="">
+        <img src="/img/image4.jpg" alt="">
+    </div>
+    <footer>
+        <p>&copy; 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+</html>
